@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Bharathraj R</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- LAYOUT & SPACING --- */
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* --- HERO SECTION --- */
+        .about-hero {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+        
+        .hero-img {
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 2px solid var(--neon-green);
+            box-shadow: 0 0 30px rgba(0, 255, 65, 0.2);
+            transition: 0.3s;
+        }
+        
+        .hero-img:hover { transform: scale(1.02); }
+
+        .hero-text h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero-text p { color: #ccc; line-height: 1.8; font-size: 1.1rem; margin-bottom: 30px; }
+
+        /* --- INFO CARDS --- */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .info-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .info-card:hover {
+            border-color: var(--neon-green);
+            transform: translateY(-10px);
+            background: rgba(0, 255, 65, 0.05);
+        }
+
+        .info-card i { font-size: 2.5rem; color: var(--neon-green); margin-bottom: 20px; }
+        .info-card h3 { font-size: 1.2rem; margin-bottom: 15px; }
+        .info-card p { color: #888; font-size: 0.9rem; line-height: 1.6; }
+
+        /* --- EDUCATION TIMELINE --- */
+        .timeline-section { margin-bottom: 80px; }
+        
+        .edu-item {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(20, 20, 20, 0.6);
+            border-left: 3px solid var(--neon-green);
+            border-radius: 0 10px 10px 0;
+        }
+
+        .edu-date {
+            min-width: 120px;
+            font-weight: bold;
+            color: var(--neon-green);
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .edu-content h3 { font-size: 1.2rem; margin-bottom: 5px; }
+        .edu-content h4 { font-size: 1rem; color: #aaa; margin-bottom: 10px; }
+        .edu-content p { color: #888; font-size: 0.9rem; }
+
+        /* --- TECH STACK BADGES --- */
+        .skills-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-badge {
+            background: #111;
+            border: 1px solid #333;
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: #ccc;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .skill-badge:hover {
+            border-color: var(--neon-green);
+            color: white;
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-hero { flex-direction: column; text-align: center; }
+            .hero-img { width: 100%; max-width: 300px; }
+            .edu-item { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="images/Gemini_Generated_Image_2h5lo2h5lo2h5lo2.png" alt="BR Logo" class="logo-img" style="height: 50px; width: auto;">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="hackathons.html">Hackathons</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+            <li><a href="certifications.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+              <li><a href="card.html">Qr code</a></li>
+        </ul>
+    </nav>
+
+    <div class="container fade-in">
+        
+        <section class="about-hero">
+            <img src="images/Gemini_Generated_Image_8og0ps8og0ps8og0.png" alt="Bharathraj R" class="hero-img">
+            <div class="hero-text">
+                <h1>Hello, I'm <span class="neon-text">Bharathraj.</span></h1>
+                <p>
+                    I am a passionate <b>Biomedical Engineer</b> with a strong flair for <b>Embedded Systems, IoT, and Artificial Intelligence</b>. 
+                    My mission is to bridge the gap between healthcare and technology by developing smart, efficient, and life-saving medical devices.
+                    <br><br>
+                    With hands-on experience in <b>PCB Design, Python, and Medical Instrumentation</b>, I love solving complex problems and participating in hackathons to turn innovative ideas into reality.
+                </p>
+                
+                <a href="https://drive.google.com/file/d/1vhd7Hri_uPt32fgH3p04tY4xLObWA3Mw/view?usp=sharing"  target="_blank" class="btn" style="display:inline-block; padding: 12px 30px; background:var(--neon-green); color:black; font-weight:bold; border-radius:5px; text-decoration:none;">Download CV <i class="fas fa-download"></i></a>
+            </div>
+        </section>
+
+        <h2 class="section-title text-center" style="text-align:center; margin-bottom:40px;">What I Do</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Medical Tech</h3>
+                <p>Designing and maintaining advanced biomedical equipment like CT, X-Ray, and patient monitoring systems.</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-microchip"></i>
+                <h3>Embedded Systems</h3>
+                <p>Developing IoT solutions using Arduino, Raspberry Pi, ESP32, and custom PCB designs.</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-brain"></i>
+                <h3>AI & Software</h3>
+                <p>Building intelligent models using Python, DeepSeek, and Google Gemini for healthcare automation.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Education</h2>
+        <div class="timeline-section">
+            
+            <div class="edu-item">
+                <div class="edu-date">2023 - 2027</div>
+                <div class="edu-content">
+                    <h3>B.E. Biomedical Engineering</h3>
+                    <h4>Karpagam Academy of Higher Education, Coimbatore</h4>
+                    <p>Focusing on Medical Electronics, Bio-Signal Processing, and Healthcare Innovation. Active member of IEEE and Innovation Club.</p>
+                </div>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-date">2021 - 2023</div>
+                <div class="edu-content">
+                    <h3>Higher Secondary (HSC)</h3>
+                    <h4>State Board, Tamil Nadu</h4>
+                    <p>specialized in Biology and Mathematics with distinction.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="skills-wrapper">
+            <div class="skill-badge"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-badge"><i class="fas fa-database"></i> SQL</div>
+            <div class="skill-badge"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="skill-badge"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="skill-badge"><i class="fas fa-microchip"></i> Arduino</div>
+            <div class="skill-badge"><i class="fas fa-server"></i> IoT</div>
+            <div class="skill-badge"><i class="fas fa-wave-square"></i> LabVIEW</div>
+            <div class="skill-badge"><i class="fas fa-bolt"></i> PCB Design</div>
+            <div class="skill-badge"><i class="fas fa-robot"></i> Artificial Intelligence</div>
+        </div>
+
+    </div>
+
+    <footer><p>&copy; 2026 Bharathraj R.</p></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
